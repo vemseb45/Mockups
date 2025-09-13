@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbertec - Iniciar sesión</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BarberTech — Iniciar sesión</title>
+
+  
+  <!-- Archivo de estilos -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+  <main class="page">
+    <section class="login-wrap" aria-labelledby="login-title">
+
+      <!-- logo (pon img/logo.png) -->
+      <img src="img/logo.png" alt="BarberTech logo" class="logo">
+
+
+      <!-- título accesible -->
+      <h1 id="login-title" class="title">Iniciar Sesión</h1>
+
+
+      <!-- formulario: action debe apuntar a tu backend cuando lo tengas -->
+      <form class="login-form" action="#" method="POST">
+        <label for="email" class="label">Correo electrónico</label>
+        <input id="email" name="email" type="email" placeholder="Ejemplo@correo.com" required>
+
+        <label for="password" class="label">Contraseña</label>
+        <input id="password" name="password" type="password" placeholder="••••••••" required>
+
+        <div class="row small">
+        
+          <a href="#" class="link">¿Olvidó su contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn primary">Iniciar Sesión</button>
+
+        <p class="small center">¿No tiene cuenta? <a href="registro.html" class="link">Regístrese</a></p>
+      </form>
+    </section>
+  </main>
+
 </body>
 </html>
