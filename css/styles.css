@@ -1,71 +1,82 @@
+           /*Estilos generales*/
 body {
-  font-family: Arial, sans-serif;
-  background: url("../Imagenes/Fondo_de_pantalla.png") no-repeat center center fixed;
-  background-size: cover;
   margin: 0;
-
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("../imagenes/Fondo_de_pantalla.png") no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+            /*Contenedor del formulario*/
 .container {
-  background: #111;
-  padding: 70px;
-  border-radius: 60 px;
-  width: 450px;
-  box-shadow: 0px 0px 25px rgba(13, 61, 194, 0.9);
+  background: rgba(0, 0, 0, 0.9); 
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
   text-align: center;
-}ccscs
-
-
-
-*/msnskm
-
-.title {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #0584FC;
+  box-shadow: 0px 0px 30px rgba(0, 102, 255, 0.8); 
 }
 
-.form label {
-  display: block;
-  margin-top: 10px;
+            /*Título principal*/
+.title {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+            /*Formularios*/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #ddd;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
   font-size: 14px;
 }
 
-.form input {
-  width: 95%;
-  padding: 10px;
-  margin-top: 5px;
-  border: none;
-  border-radius: 60px;
-}
-
+              /*Botones*/
 button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 20px;
-  background: #0584FC;
-  color: white;
+  background: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 60px;
+  padding: 12px;
+  border-radius: 20px;
+  font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  background: #0260b5;
+  background: #0056b3;
 }
 
+            /*Texto extra*/
 .extra {
-  margin-top: 15px;
-  text-align: center;
+  margin-top: 10px;
   font-size: 14px;
-  color: white;
+  color: #ccc;
 }
 
 .extra a {
-  color: #0584FC;
+  color: #007bff;
   text-decoration: none;
+}
+
+.extra a:hover {
+  text-decoration: underline;
 }
